@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const About = () => {
     return (
@@ -8,7 +9,12 @@ export const About = () => {
                         <h2 className="text-white mt-0">We've got what you need!</h2>
                         <hr className="divider divider-light" />
                         <p className="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a className="btn btn-light btn-xl" href="#services">Get Started!</a>
+                        <Link 
+                            className="btn btn-light btn-xl" 
+                            to="/nosotros"
+                        >
+                            Nosotros
+                        </Link>
                     </div>
                 </div>
             </div>
