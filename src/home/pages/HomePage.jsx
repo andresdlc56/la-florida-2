@@ -1,4 +1,5 @@
-import { About, Contact, Header, MasProductos, Portafolio, Services } from "../../ui/componets";
+import { Header, About, Services, Portafolio, MasProductos, Contact } from "../../ui"
+
 
 export const HomePage = () => {
     return (
