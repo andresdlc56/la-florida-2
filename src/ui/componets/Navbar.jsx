@@ -10,7 +10,7 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto my-2 my-lg-0">
                         <li className="nav-item"><a className="nav-link" href="#about">Inicio</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#about">Nostros</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#about">Nosotros</a></li>
                         <li className="nav-item"><a className="nav-link" href="#services">Servicios</a></li>
                         <li className="nav-item"><a className="nav-link" href="#portfolio">Productos</a></li>
                         <li className="nav-item"><a className="nav-link" href="#contact">Contacto</a></li>
