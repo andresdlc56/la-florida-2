@@ -1,11 +1,15 @@
 
 export const Header2 = () => {
     return (
-        <section className="page-section bg-dark text-white">
-            <div className="container px-4 px-lg-5 text-center">
-                <h2 className="mb-4">Nuestros Productos</h2>
-                <a className="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Ver Mas</a>
+        <header className="masthead2">
+            <div className="container px-4 px-lg-5 h-80">
+                <div className="row gx-4 gx-lg-5 h-80 align-items-center justify-content-center text-center">
+                    <div className="col-lg-8 align-self-end">
+                        <h1 className="text-white font-weight-bold">Nuestros Productos</h1>
+                        <hr className="divider" />
+                    </div>
+                </div>
             </div>
-        </section>
+        </header>
     )
 }

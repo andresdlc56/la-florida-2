@@ -3,25 +3,8 @@ import { AppRouter } from "./router/AppRouter";
 
 function App() {
     return (
-        <body id="page-top">
-            
-            <AppRouter />
-            
-            {
-                /*<Navbar />       
-
-                <Header />
-
-                
-
-                <Services />
-
-                <Portafolio />
-
-                <MasProductos />
-
-                <Contact />
-            */}   
+        <body id="page-top">  
+            <AppRouter />  
         </body>    
     )
 }
