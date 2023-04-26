@@ -1,6 +1,6 @@
 
 import { getProductosByCateg } from "../../productos/helpers/getProductosByCateg";
-import { Header2, Navbar2 } from "../../ui/componets";
+import { Header4, Navbar2 } from "../../ui/componets";
 import { ProductoCard } from "../../ui/productos/ProductoCard";
 
 export const ProductosPage = () => {
@@ -13,7 +13,7 @@ export const ProductosPage = () => {
         <>
             <Navbar2 />
 
-            <Header2 />
+            <Header4 />
 
             <div className="container">
                 <div className="row">

@@ -9,7 +9,12 @@ export const About = () => {
                         <h2 className="text-white mt-0">Nosotros</h2>
                         <hr className="divider divider-light" />
                         <p className="text-white-75 mb-4">Licorería La Florida, empresa dedicada a la elaboración, envejecimiento y envasado de bebidas alcohólicas, fue fundada en 1948 por Don Rafael en la ciudad de Cumaná, primera ciudad erigida por los españoles en tierras americanas. La empresa es hoy por hoy una de las más representativas del estado Sucre, proyectando su imagen dentro y fuera de nuestras fronteras. </p>
-                        <a className="btn btn-light btn-xl" href="#service">Saber Mas</a>
+                        <Link 
+                            className="btn btn-light btn-xl" 
+                            to="/nosotros"
+                        >
+                            Saber Mas
+                        </Link>
                     </div>
                 </div>
             </div>
