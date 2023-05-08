@@ -13,7 +13,7 @@ export const NosotrosPage = () => {
                     <div className="col-md-7">
                         <h2 className="title">Nuestros Origenes</h2>
                         <p>
-                            Don Rafael Rosendo Yáñez Quijada, nació en el seno de una familia que por varias generaciones se ha dedicado a la destilación del jugo de la caña de azúcar. 
+                            Rafael Rosendo Yáñez Quijada, nació en el seno de una familia que por varias generaciones se ha dedicado a la destilación del jugo de la caña de azúcar. 
                             Comenzó a muy temprana edad a aprender los secretos de su profesión en la población de Nueva Colombia, 
                             ubicada en la zona central del estado Sucre, al nororiente de Venezuela, región donde se comenzaron a producir los primeros rones del país, 
                             en una época donde esta bebida hizo famoso al Caribe. Don Rafael Yáñez tiene hoy más de 50 años dedicados a continuar la tradicional fabricación de estos nobles licores llenos de historia. 
