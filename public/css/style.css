@@ -1,0 +1,49 @@
+.contenedor {
+
+    display: flex;
+    text-align: justify;
+
+}
+
+.columna1   {
+
+    padding: 25px;
+    margin:  25px;
+
+}
+
+.columna2   {
+
+    padding: 25px;
+    margin:  25px;
+
+}
+
+.imagen   {
+
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+
+
+}
+
+.contenedor2  { 
+
+    margin: 0 45px;
+    text-align: justify;
+
+}
+
+h2 {
+    
+    text-align: center;
+
+}
+
+.pf-1   {
+
+    margin-left: 25px;
+
+}
+
