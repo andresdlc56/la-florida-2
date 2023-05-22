@@ -23,7 +23,7 @@ export const ProductoModal = ({ articulo }) => {
 
                                     <hr />
 
-                                    <table className="table mt-5">
+                                    <table className="table table-bordered mt-5">
                                         
                                         <tbody>
                                             <tr>

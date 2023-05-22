@@ -26,7 +26,7 @@ export const productos = [
     {
         'id': '003',
         'categoria': 'Licores Dulces',
-        'nombre': 'Crema de Ponsigue',
+        'nombre': 'Ponsigue Lider',
         'alias': 'ponsigue',
         'image': 'ponsigue.JPG', 
         'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
