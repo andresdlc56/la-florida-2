@@ -1,4 +1,4 @@
-import { Header, About, Services, Portafolio, MasProductos, Contact, Navbar } from "../../ui"
+import { Header, About, Services, Portafolio, MasProductos, Contact, Navbar, Footer } from "../../ui"
 
 
 export const HomePage = () => {
@@ -17,6 +17,8 @@ export const HomePage = () => {
             <MasProductos />
 
             <Contact />
+
+            <Footer />
         </>
     )
 }
