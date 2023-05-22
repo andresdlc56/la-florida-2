@@ -17,8 +17,6 @@ export const HomePage = () => {
             <MasProductos />
 
             <Contact />
-
-            <Footer />
         </>
     )
 }
