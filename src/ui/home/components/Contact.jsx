@@ -1,3 +1,4 @@
+import { EmailForm } from "./EmailForm"
 
 export const Contact = () => {
     return (
@@ -7,13 +8,13 @@ export const Contact = () => {
                     <div className="col-lg-8 col-xl-6 text-center">
                         <h2 className="mt-0">Pongase en contacto!</h2>
                         <hr className="divider" />
-                        <p className="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+                        
                     </div>
                 </div>
                 <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div className="col-lg-6">
                         {/*----------Formulario--------------------*/}
-                        
+                        <EmailForm />
                     </div>
                 </div>
                 <div className="row gx-4 gx-lg-5 justify-content-center">
