@@ -7,15 +7,15 @@
 
 .columna1   {
 
-    padding: 25px;
-    margin:  25px;
+    padding: 0%;
+    margin:  85px;
 
 }
 
 .columna2   {
 
-    padding: 25px;
-    margin:  25px;
+    padding: 10px 50px 30px 0;
+    margin:  40px;
 
 }
 
@@ -30,7 +30,7 @@
 
 .contenedor2  { 
 
-    margin: 0 45px;
+    margin: 0 90px;
     text-align: justify;
 
 }
@@ -41,9 +41,13 @@ h2 {
 
 }
 
-.pf-1   {
-
-    margin-left: 25px;
-
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #D90303;
+    opacity: 1;
 }
+
+
 

@@ -19,7 +19,6 @@ export const NosotrosPage = () => {
 
                     <h2>Nuestros Origenes</h2>
                     <hr className="divider divider-light" />
-                    <br></br>
                     <p>Don Rafael Rosendo Yáñez Quijada, nació en el seno de
                         una familia que por varias generaciones se ha
                         dedicado a la destilación del jugo de la caña de azúcar.
@@ -37,19 +36,18 @@ export const NosotrosPage = () => {
                         corazones.</p>
                     
                     <br></br>
-                    <img src="public/assets/img/captura2.PNG" class="imagen" width="550px" alt="" />
+                    <img src="public/assets/img/captura2.PNG" class="imagen" width="500px" alt="" />
 
                 </div>
 
 
                 <div className="columna2">
 
-                    <img src="public/assets/img/captura.PNG" class="imagen" alt="" />
+                    <img src="public/assets/img/captura.PNG" class="imagen"  alt="" />
                     
                     <br></br>
                     <h2>Licorería La Florida</h2>
                     <hr className="divider divider-light" />
-                    <br></br>
                     <p>Licorería La Florida, empresa dedicada a la
                         elaboración, envejecimiento y envasado de
                         bebidas alcohólicas, fue fundada en 1948 por
@@ -63,17 +61,16 @@ export const NosotrosPage = () => {
                         que destacan el Gold Mercury International Award, en 1981, y la Medalla de Oro de Lieja,
                         Bélgica, en 1990.
                     </p>
-
+                    
                 </div>
-
+            
             </div>
 
             <div className="contenedor2">
-
+                
                 <h2>Producción</h2>
                 <hr className="divider divider-light" />
-                <br></br>
-                <p className="pf-1">A la ancestral dedicación y esmero en la producción de licores, Licorería La Florida une hoy
+                <p>A la ancestral dedicación y esmero en la producción de licores, Licorería La Florida une hoy
                     los más avanzados recursos tecnológicos, los
                     cuales, junto a la mística de las personas que
                     intervienen en el proceso, permiten obtener
