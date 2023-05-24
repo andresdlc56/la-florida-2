@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 
 //import { HomeRoutes } from "../home/routes/HomeRoutes";
 import { HomePage, NosotrosPage, ProductosPage } from "../home/pages";
+import { Footer } from "../ui";
 
 
 export const AppRouter = () => {
@@ -17,6 +18,8 @@ export const AppRouter = () => {
                 {/* Ruta para cualquier url */}
                 <Route path="/*" element={ <Navigate to="/" /> } />
             </Routes>
+
+            <Footer />
         </>
     )
 }
