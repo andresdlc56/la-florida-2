@@ -9,14 +9,23 @@ export const EmailForm = () => {
         description: ''
     });
 
-    const onSubmitForm = (e) => {
+    /*const onSubmitForm = (e) => {
         e.preventDefault();
 
-        console.log('Formulario enviado...');
-    }
+        //console.log('Formulario enviado...');
+
+        const newMessage = {
+            fullName,
+            email,
+            phoneNumber,
+            description
+        }
+
+        console.log(newMessage);
+    }*/
 
     return (
-        <form onSubmit={ onSubmitForm }>                
+        <form action="https://formsubmit.co/de1d8c0f7d83925a497fa37bdc81bb45" method="POST">                
             <div className="form-floating mb-3">
                 <input 
                     className="form-control" 
@@ -100,6 +109,9 @@ export const EmailForm = () => {
             <div className="d-none"><div className="text-center text-danger mb-3">Error sending message!</div></div>
                             
             <div className="d-grid"><button className="btn btn-primary btn-xl" type="submit">Submit</button></div>
+
+            <input type="hidden" name="_next" value="http://localhost:5173/" />
+            <input type="hidden" name="_captcha" value="false" />
         </form>
     )
 }
