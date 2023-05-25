@@ -9,7 +9,7 @@ export const EmailForm = () => {
         description: ''
     });
 
-    /*const onSubmitForm = (e) => {
+    const onSubmitForm = (e) => {
         e.preventDefault();
 
         //console.log('Formulario enviado...');
@@ -21,11 +21,24 @@ export const EmailForm = () => {
             description
         }
 
-        console.log(newMessage);
-    }*/
+        //console.log(newMessage);
+
+        fetch("https://formsubmit.co/ajax/de1d8c0f7d83925a497fa37bdc81bb45", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(newMessage)
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+
+    }
 
     return (
-        <form action="https://formsubmit.co/de1d8c0f7d83925a497fa37bdc81bb45" method="POST">                
+        <form onSubmit={ onSubmitForm }>                
             <div className="form-floating mb-3">
                 <input 
                     className="form-control" 
