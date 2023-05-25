@@ -1,0 +1,53 @@
+.contenedor {
+
+    display: flex;
+    text-align: justify;
+
+}
+
+.columna1   {
+
+    padding: 0%;
+    margin:  85px;
+
+}
+
+.columna2   {
+
+    padding: 10px 50px 30px 0;
+    margin:  40px;
+
+}
+
+.imagen   {
+
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+
+
+}
+
+.contenedor2  { 
+
+    margin: 0 90px;
+    text-align: justify;
+
+}
+
+h2 {
+    
+    text-align: center;
+
+}
+
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #D90303;
+    opacity: 1;
+}
+
+
+
