@@ -19,7 +19,7 @@ export const NosotrosPage = () => {
 
                     <h2>Nuestros Origenes</h2>
                     <hr className="divider divider-light" />
-                    <p>Don Rafael Rosendo Yáñez Quijada, nació en el seno de
+                    <p> Don Rafael Rosendo Yáñez Quijada, nació en el seno de
                         una familia que por varias generaciones se ha
                         dedicado a la destilación del jugo de la caña de azúcar.
                         Comenzó a muy temprana edad a aprender los
@@ -36,14 +36,14 @@ export const NosotrosPage = () => {
                         corazones.</p>
                     
                     <br></br>
-                    <img src="public/assets/img/captura2.PNG" class="imagen" width="500px" alt="" />
+                    <img className="imagen animate__animated animate__fadeInLeftBig" src="public/assets/img/captura2.PNG" width="500px" alt="" />
 
                 </div>
 
 
                 <div className="columna2">
 
-                    <img src="public/assets/img/captura.PNG" class="imagen"  alt="" />
+                    <img className="imagen animate__animated animate__fadeInRightBig" src="public/assets/img/captura.PNG" alt="" />
                     
                     <br></br>
                     <h2>Licorería La Florida</h2>
@@ -104,7 +104,7 @@ export const NosotrosPage = () => {
                     directa.</p>
                 
                 <br></br>
-                <img src="public/assets/img/captura3.PNG" class="imagen" width="650px" alt="" />
+                <img className="imagen animate__animated animate__fadeInUpBig" src="public/assets/img/captura3.PNG" width="650px" alt="" />
 
             </div>
 
