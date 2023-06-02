@@ -12,8 +12,6 @@ export const EmailForm = () => {
     const onSubmitForm = (e) => {
         e.preventDefault();
 
-        //console.log('Formulario enviado...');
-
         const newMessage = {
             fullName,
             email,
@@ -21,8 +19,7 @@ export const EmailForm = () => {
             description
         }
 
-        //console.log(newMessage);
-
+        //Enviando la info a la API
         fetch("https://formsubmit.co/ajax/de1d8c0f7d83925a497fa37bdc81bb45", {
             method: "POST",
             headers: { 
@@ -34,7 +31,6 @@ export const EmailForm = () => {
         .then(response => response.json())
         .then(data => console.log(data))
         .catch(error => console.log(error));
-
     }
 
     return (
