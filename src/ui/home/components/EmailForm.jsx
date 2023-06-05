@@ -1,4 +1,8 @@
+import { useForm } from "react-hook-form";
+
+
 import { useForm } from "../../../hooks/useForm";
+
 
 export const EmailForm = () => {
 
@@ -8,6 +12,11 @@ export const EmailForm = () => {
         phoneNumber: '',
         description: ''
     });
+
+    
+    //const { register, formState: { errors }, handleSubmit } = useForm();
+    //const onSubmit = (data) => console.log(data);
+
 
     const onSubmitForm = (e) => {
         e.preventDefault();
@@ -34,93 +43,141 @@ export const EmailForm = () => {
     }
 
     return (
-        <form onSubmit={ onSubmitForm }>                
-            <div className="form-floating mb-3">
-                <input 
-                    className="form-control" 
-                    type="text" 
-                    placeholder="Ingrese su nombre completo" 
-                    name="fullName"
-                    value={ fullName }
-                    onChange={ onInputChange }
-                />
-                
-                <label>Nombre</label>
-                
-                <div className="invalid-feedback">A name is required.</div>
-            </div>
-                            
-            <div className="form-floating mb-3">
-                <input 
-                    className="form-control" 
-                    type="email" 
-                    placeholder="name@example.com"
-                    name="email"
-                    value={ email } 
-                    onChange={ onInputChange }
-                />
-                
-                <label>Correo Electronico</label>
-                
-                <div className="invalid-feedback">An email is required.</div>
-                
-                <div className="invalid-feedback">Email is not valid.</div>
-            </div>
-                            
-            <div className="form-floating mb-3">
-                <input 
-                    className="form-control" 
-                    type="tel" 
-                    placeholder="(123) 456-7890"
-                    name="phoneNumber" 
-                    value={ phoneNumber }
-                    onChange={ onInputChange }
-                />
-                                
-                <label>Numero Telefonico</label>
-                
-                <div className="invalid-feedback">A phone number is required.</div>
-            </div>
-                            
-            <div className="form-floating mb-3">
-                <textarea 
-                    className="form-control" 
-                    type="text" 
-                    placeholder="Ingrese su mensaje aqui..." 
-                    style={{height: "10rem"}}
-                    name="description"
-                    value={ description }
-                    onChange={ onInputChange }
-                >
-                </textarea>
-                                
-                <label>Mensaje</label>
-                
-                <div className="invalid-feedback">A message is required.</div>
-            </div>
-                            
-            <div className="d-none">
-                <div className="text-center mb-3">
-                    <div 
-                        className="fw-bolder"
-                    >
-                        Form submission successful!
-                    </div>
+        <>
+            {/*<form onSubmit={handleSubmit(onSubmit)}>
+                <div className="form-floating mb-3">
                     
-                    To activate this form, sign up at
-                    
-                    <br />
-                    
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
-            </div>
-                            
-            <div className="d-none"><div className="text-center text-danger mb-3">Error sending message!</div></div>
-                            
-            <div className="d-grid"><button className="btn btn-primary btn-xl" type="submit">Submit</button></div>
+                    <input 
+                        className="form-control mt-2"
+                        placeholder="Ingrese su nombre completo" 
+                        type="text" 
+                        {...register("firstName", { required: true })} 
+                        aria-invalid={errors.firstName ? "true" : "false"}
+                        
+                    />
+                    {
+                        errors.firstName?.type === 'required' 
+                        && <p role="alert">First name is required</p>
+                    }
 
-            <input type="hidden" name="_next" value="http://localhost:5173/" />
-            <input type="hidden" name="_captcha" value="false" />
-        </form>
+                    <input 
+                        className="form-control mt-2" 
+                        placeholder="name@example.com"
+                        {...register("mail", { required: "Email Address is required" })} 
+                        aria-invalid={errors.mail ? "true" : "false"} 
+                    />
+                    {
+                        errors.mail 
+                        && <p role="alert">{errors.mail?.message}</p>
+                    }
+
+                    <input 
+                        type="text"
+                        className="form-control mt-2" 
+                        placeholder="(123) 456-7890"
+                        {...register("number", { required: "Numero Telefonico requerido" })} 
+                        aria-invalid={errors.number ? "true" : "false"} 
+                    />
+                    {
+                        errors.number 
+                        && <p role="alert">{errors.number?.message}</p>
+                    }
+                
+                    <input type="submit" />
+                </div>
+                </form>*/}
+
+
+             
+                <form onSubmit={ onSubmitForm }>                
+                    <div className="form-floating mb-3">
+                        <input 
+                            className="form-control" 
+                            type="text" 
+                            placeholder="Ingrese su nombre completo" 
+                            name="fullName"
+                            value={ fullName }
+                            onChange={ onInputChange }
+                        />
+                        
+                        <label>Nombre</label>
+                        
+                        <div className="invalid-feedback">A name is required.</div>
+                    </div>
+                                    
+                    <div className="form-floating mb-3">
+                        <input 
+                            className="form-control" 
+                            type="email" 
+                            placeholder="name@example.com"
+                            name="email"
+                            value={ email } 
+                            onChange={ onInputChange }
+                        />
+                        
+                        <label>Correo Electronico</label>
+                        
+                        <div className="invalid-feedback">An email is required.</div>
+                        
+                        <div className="invalid-feedback">Email is not valid.</div>
+                    </div>
+                                    
+                    <div className="form-floating mb-3">
+                        <input 
+                            className="form-control" 
+                            type="tel" 
+                            placeholder="(123) 456-7890"
+                            name="phoneNumber" 
+                            value={ phoneNumber }
+                            onChange={ onInputChange }
+                        />
+                                        
+                        <label>Numero Telefonico</label>
+                        
+                        <div className="invalid-feedback">A phone number is required.</div>
+                    </div>
+                                    
+                    <div className="form-floating mb-3">
+                        <textarea 
+                            className="form-control" 
+                            type="text" 
+                            placeholder="Ingrese su mensaje aqui..." 
+                            style={{height: "10rem"}}
+                            name="description"
+                            value={ description }
+                            onChange={ onInputChange }
+                        >
+                        </textarea>
+                                        
+                        <label>Mensaje</label>
+                        
+                        <div className="invalid-feedback">A message is required.</div>
+                    </div>
+                                    
+                    <div className="d-none">
+                        <div className="text-center mb-3">
+                            <div 
+                                className="fw-bolder"
+                            >
+                                Form submission successful!
+                            </div>
+                            
+                            To activate this form, sign up at
+                            
+                            <br />
+                            
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                                    
+                    <div className="d-none"><div className="text-center text-danger mb-3">Error sending message!</div></div>
+                                    
+                    <div className="d-grid"><button className="btn btn-primary btn-xl" type="submit">Submit</button></div>
+
+                    <input type="hidden" name="_next" value="http://localhost:5173/" />
+                    <input type="hidden" name="_captcha" value="false" />
+                </form>
+        
+        </>
     )
 }
