@@ -16,6 +16,18 @@ export const Contact = () => {
                         {/*----------Formulario--------------------*/}
                         <EmailForm />
                     </div>
+
+                    <div className="col-lg-6">
+                        {/*----------Mapa--------------------*/}
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1237.5443283993877!2d-64.18305493037725!3d10.472233018119997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c32719011a1684d%3A0x22158d2b18e8df61!2sLicoreria%20La%20Florida!5e1!3m2!1ses!2sve!4v1686063396895!5m2!1ses!2sve" 
+                            width="600" height="450" style={{border: "0"}} 
+                            allowFullScreen="" 
+                            loading="lazy" 
+                            referrerPolicy="no-referrer-when-downgrade"
+                        >
+                        </iframe>
+                    </div>
                 </div>
                 <div className="row gx-4 gx-lg-5 justify-content-center">
                     <div className="col-lg-4 text-center mb-5 mb-lg-0">
