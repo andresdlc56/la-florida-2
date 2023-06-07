@@ -5,7 +5,7 @@ export const ProductoCard = ({ producto }) => {
     return (
         <>
             <div className="col-sm-6 col-md-3 mb-2">
-                <div className="card">
+                <div className="card animate__animated animate__fadeIn">
                     <img className="card-img-top" src={`assets/img/portfolio/productos/${ producto.image }`} alt="Card image cap" />
                     <div className="card-body text-center">
                         <button

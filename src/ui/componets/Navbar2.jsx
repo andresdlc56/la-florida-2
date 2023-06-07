@@ -34,6 +34,15 @@ export const Navbar2 = () => {
                         </li>
 
                         <li className="nav-item">
+                            <NavLink
+                                className="nav-link" 
+                                to="/#services"
+                            >
+                                Servicios
+                            </NavLink>
+                        </li>
+
+                        <li className="nav-item">
                             <NavLink 
                                 className={ ({ isActive }) => `nav-item nav-link ${ (isActive) ? 'active' : '' }` }
                                 to="/productos"
@@ -42,6 +51,15 @@ export const Navbar2 = () => {
                             </NavLink>
                         </li>
                         
+                        <li className="nav-item">
+                            <NavLink 
+                                className="nav-link" 
+                                to="/#contact"
+                            >
+                                Contacto
+                            </NavLink>
+                        </li>
+
                     </ul>
                 </div>
             </div>
