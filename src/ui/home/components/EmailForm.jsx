@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const initialState = {
+    enviando: false,
     enviado: false,
     mensaje: ''
 }
@@ -14,11 +15,16 @@ export const EmailForm = () => {
 
     const [alerta, setAlerta] = useState( initialState );
 
-    const { enviado, mensaje } = alerta;
+    const { enviado, mensaje, enviando } = alerta;
     
     
     const onSubmit = (data) => {
         //console.log(data);
+
+        setAlerta({
+            ...alerta,
+            enviando: true
+        });
 
         //Enviando la info a la API
         fetch("https://formsubmit.co/ajax/de1d8c0f7d83925a497fa37bdc81bb45", {
@@ -33,7 +39,8 @@ export const EmailForm = () => {
         .then(data => {
             setAlerta({
                 enviado: true,
-                mensaje: 'Su mensaje se ha enviado con exito. Pronto lo contactaremos'
+                mensaje: 'Su mensaje se ha enviado con exito. Pronto lo contactaremos',
+                enviando: false
             })
 
             setTimeout(() => {
@@ -152,7 +159,7 @@ export const EmailForm = () => {
            
             <div className="d-grid">
                 <button 
-                    className="btn btn-primary btn-xl" 
+                    className={`btn btn-primary btn-xl ${ (enviando) ? 'disabled' : '' }`}
                     id="submitButton" 
                     type="submit"
                 >
