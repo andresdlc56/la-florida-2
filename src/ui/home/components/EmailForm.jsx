@@ -1,105 +1,164 @@
-import { useForm } from "../../../hooks/useForm";
+
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+
+const initialState = {
+    enviado: false,
+    mensaje: ''
+}
+
 
 export const EmailForm = () => {
 
-    const { onInputChange, onResetForm, fullName, email, phoneNumber, description } = useForm({
-        fullName: '',
-        email: '',
-        phoneNumber: '',
-        description: ''
-    });
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-    const onSubmitForm = (e) => {
-        e.preventDefault();
+    const [alerta, setAlerta] = useState( initialState );
 
-        console.log('Formulario enviado...');
+    const { enviado, mensaje } = alerta;
+    
+    
+    const onSubmit = (data) => {
+        //console.log(data);
+
+        //Enviando la info a la API
+        fetch("https://formsubmit.co/ajax/de1d8c0f7d83925a497fa37bdc81bb45", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            setAlerta({
+                enviado: true,
+                mensaje: 'Su mensaje se ha enviado con exito. Pronto lo contactaremos'
+            })
+
+            setTimeout(() => {
+                setAlerta( initialState )
+            }, 3000)
+        })
+        .catch(error => console.log(error));
+
+        reset();
     }
 
+
+
     return (
-        <form onSubmit={ onSubmitForm }>                
+        <form onSubmit={ handleSubmit(onSubmit) }>
             <div className="form-floating mb-3">
                 <input 
                     className="form-control" 
+                    id="name" 
                     type="text" 
-                    placeholder="Ingrese su nombre completo" 
-                    name="fullName"
-                    value={ fullName }
-                    onChange={ onInputChange }
+                    {...register("name", {
+                        required: true,
+                        maxLength: 50
+                    })} 
                 />
                 
-                <label>Nombre</label>
+                <label htmlform="name">Full name</label>
                 
-                <div className="invalid-feedback">A name is required.</div>
+                {/* Mensaje de error */}
+                { errors.name?.type === 'required' && <p>El campo Full name es Requerido</p> }
+                { errors.name?.type === 'maxLength' && <p>El campo Full name no debe exceder los 50 caracteres</p> }
+
+                {/* Mensaje de error de la plantilla (no funciona) */}
+                <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
             </div>
                             
             <div className="form-floating mb-3">
                 <input 
                     className="form-control" 
+                    id="email" 
                     type="email" 
-                    placeholder="name@example.com"
-                    name="email"
-                    value={ email } 
-                    onChange={ onInputChange }
+                    {...register("email", {
+                        required: true,
+                        pattern: /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
+                    })}
                 />
                 
-                <label>Correo Electronico</label>
+                <label htmlform="email">Email address</label>
                 
-                <div className="invalid-feedback">An email is required.</div>
-                
-                <div className="invalid-feedback">Email is not valid.</div>
+                {/* Mensaje de error */}
+                { errors.email?.type === 'required' && <p>El campo Email es Requerido</p> }
+                { errors.email?.type === 'pattern' && <p>El formato del Email es incorrecto</p> }
+
+                {/* Mensaje de error de la plantilla (no funciona) */}
+                <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
             </div>
                             
             <div className="form-floating mb-3">
                 <input 
                     className="form-control" 
+                    id="phone" 
                     type="tel" 
-                    placeholder="(123) 456-7890"
-                    name="phoneNumber" 
-                    value={ phoneNumber }
-                    onChange={ onInputChange }
+                    {...register("phone", {
+                        required: true,
+                        maxLength: 11
+                    })}
                 />
-                                
-                <label>Numero Telefonico</label>
                 
-                <div className="invalid-feedback">A phone number is required.</div>
+                <label htmlform="phone">Phone number</label>
+
+                {/* Mensaje de error */}
+                { errors.phone?.type === 'required' && <p>El campo Numero Telefonico name es Requerido</p> }
+                { errors.phone?.type === 'maxLength' && <p>El campo Numero Telefonico no debe exceder los 11 caracteres</p> }
+
+                {/* Mensaje de error de la plantilla (no funciona) */}
+                <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
             </div>
                             
             <div className="form-floating mb-3">
                 <textarea 
                     className="form-control" 
+                    id="message" 
                     type="text" 
-                    placeholder="Ingrese su mensaje aqui..." 
-                    style={{height: "10rem"}}
-                    name="description"
-                    value={ description }
-                    onChange={ onInputChange }
-                >
-                </textarea>
-                                
-                <label>Mensaje</label>
-                
-                <div className="invalid-feedback">A message is required.</div>
+                    style={{ height: "10rem" }} 
+                    {...register("message", {
+                        required: true
+                    })}
+                />
+                    
+                <label htmlform="message">Message</label>
+
+                {/* Mensaje de error */}
+                { errors.message?.type === 'required' && <p>El campo Message es Requerido</p> }
+
+                {/* Mensaje de error de la plantilla (no funciona) */}
+                <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
             </div>
-                            
-            <div className="d-none">
-                <div className="text-center mb-3">
-                    <div 
-                        className="fw-bolder"
-                    >
-                        Form submission successful!
+
+            {
+                (enviado) 
+                && (
+                    <div  id="submitSuccessMessage">
+                        <div className="text-center mb-3">
+                            <div className="fw-bolder">Form submission successful!</div>
+                            { mensaje }
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
                     </div>
-                    
-                    To activate this form, sign up at
-                    
-                    <br />
-                    
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
+                )
+            }              
+            
+           
+            <div className="d-none" id="submitErrorMessage"><div className="text-center text-danger mb-3">Error sending message!</div></div>
+           
+            <div className="d-grid">
+                <button 
+                    className="btn btn-primary btn-xl" 
+                    id="submitButton" 
+                    type="submit"
+                >
+                    Submit
+                </button>
             </div>
-                            
-            <div className="d-none"><div className="text-center text-danger mb-3">Error sending message!</div></div>
-                            
-            <div className="d-grid"><button className="btn btn-primary btn-xl" type="submit">Submit</button></div>
         </form>
     )
 }
