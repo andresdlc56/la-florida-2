@@ -10,7 +10,6 @@ export const Header = () => {
                     </div>
                     <div className="col-lg-8 align-self-baseline">
                         <p className="text-white-75 mb-5">Licorería La Florida, empresa dedicada a la elaboración, envejecimiento y envasado de bebidas alcohólicas</p>
-                        <a className="btn btn-primary btn-xl" href="#about">Find Out More</a>
                     </div>
                 </div>
             </div>

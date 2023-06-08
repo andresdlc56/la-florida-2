@@ -29,7 +29,7 @@ export const EmailForm = () => {
                 
                 <label>Nombre</label>
                 
-                <div className="invalid-feedback">A name is required.</div>
+                <div className="invalid-feedback">Se requiere un nombre.</div>
             </div>
                             
             <div className="form-floating mb-3">
@@ -44,9 +44,9 @@ export const EmailForm = () => {
                 
                 <label>Correo Electronico</label>
                 
-                <div className="invalid-feedback">An email is required.</div>
+                <div className="invalid-feedback">Se requiere un email.</div>
                 
-                <div className="invalid-feedback">Email is not valid.</div>
+                <div className="invalid-feedback">El correo no es válido.</div>
             </div>
                             
             <div className="form-floating mb-3">
@@ -61,7 +61,7 @@ export const EmailForm = () => {
                                 
                 <label>Numero Telefonico</label>
                 
-                <div className="invalid-feedback">A phone number is required.</div>
+                <div className="invalid-feedback">Se requiere un número de teléfono.</div>
             </div>
                             
             <div className="form-floating mb-3">
@@ -78,7 +78,7 @@ export const EmailForm = () => {
                                 
                 <label>Mensaje</label>
                 
-                <div className="invalid-feedback">A message is required.</div>
+                <div className="invalid-feedback">Se requiere un mensaje.</div>
             </div>
                             
             <div className="d-none">
@@ -86,10 +86,11 @@ export const EmailForm = () => {
                     <div 
                         className="fw-bolder"
                     >
-                        Form submission successful!
+                        Envío de formulario exitoso!
+
                     </div>
                     
-                    To activate this form, sign up at
+                    Para activar este formulario, regístrate en
                     
                     <br />
                     
@@ -97,9 +98,9 @@ export const EmailForm = () => {
                 </div>
             </div>
                             
-            <div className="d-none"><div className="text-center text-danger mb-3">Error sending message!</div></div>
+            <div className="d-none"><div className="text-center text-danger mb-3">¡Error al enviar el mensaje!</div></div>
                             
-            <div className="d-grid"><button className="btn btn-primary btn-xl" type="submit">Submit</button></div>
+            <div className="d-grid"><button className="btn btn-primary btn-xl" type="submit">Entregar</button></div>
         </form>
     )
 }
