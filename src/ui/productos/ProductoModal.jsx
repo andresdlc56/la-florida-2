@@ -16,7 +16,7 @@ export const ProductoModal = ({ articulo }) => {
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <img src={`assets/img/portfolio/productos/${ articulo.image }`} className="img-fluid" alt="..."></img>
+                                    <img src={`assets/img/Botellas/Modificados/${ articulo.image }`} className="img-fluid" alt="..."></img>
                                 </div>
                                 <div className="col-md-6 ms-auto border-start">
                                     <p>{ articulo.descripcion }</p>
