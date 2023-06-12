@@ -41,9 +41,9 @@ export const productos = [
         'nombre': 'Coquito',
         'alias': 'coquito',
         'image': 'coquito.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Suave sabor e insuperable calidad, perfecto para degustar, como y donde gustes. Coquito es tu oportunidad para pasarla bien y sobre todo armar la Rumba con los panas.',
         'capacidad': '1.00',
-        'grados': '30',
+        'grados': '40',
         'empaque': '12'
     },
 
@@ -53,7 +53,7 @@ export const productos = [
         'nombre': 'El Cumanes',
         'alias': 'cumanes',
         'image': 'cumanes.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Cálido, cordial e intenso, con todo el carácter de Oriente. Es 100% natural, con un sabor exclusivo por la maceración del ponsigué. Una de sus facultades es que se puede tomar como aperitivo, preferiblemente frío.',
         'capacidad': '1.00',
         'grados': '40',
         'empaque': '12'
@@ -77,9 +77,9 @@ export const productos = [
         'nombre': 'Triple AAA Legend',
         'alias': 'legend',
         'image': 'legend.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Lo mejor de nuestras barricas e ingenio ahora es leyenda, con esta versión superior de nuestro Triple AAA. Triple AAA Legend es un Blended único y de nivel esmerado, creación de los maestros licoreros La Florida.',
         'capacidad': '1.00',
-        'grados': '30',
+        'grados': '40',
         'empaque': '12'
     },
 
@@ -101,9 +101,9 @@ export const productos = [
         'nombre': 'Nacional',
         'alias': 'nacional',
         'image': 'nacional.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Orgullo de nuestras bodegas, producto de la constancia artesanal de los maestros de La Florida, combina las mejores cañas de azúcar con un singular proceso de envejecimiento en barricas de roble, rodeadas por las brisas caribeñas de la costa oriental venezolana, bajo el nivel del mar. Con un sabor único, cuerpo y personalidad inimitables.',
         'capacidad': '1.00',
-        'grados': '30',
+        'grados': '40',
         'empaque': '12'
     },
 
@@ -125,9 +125,9 @@ export const productos = [
         'nombre': 'El Potro',
         'alias': 'potro',
         'image': 'potro.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Predominando el sabor a Maceración de Virutas de Roble, dándole suavidad al paladar. Por su aroma, sabor y frescura es ideal para pasar ratos ideales, solo con la botella sin nada para combinar,',
         'capacidad': '1.00',
-        'grados': '30',
+        'grados': '38',
         'empaque': '12'
     },
 
@@ -137,7 +137,7 @@ export const productos = [
         'nombre': 'R.Y. Rojo',
         'alias': 'ry_r',
         'image': 'ry_r.JPG', 
-        'descripcion': 'Creado en honor a nuestro fundador, Don Rafael Yáñez, es una bebida de bajo contenido alcohólico y bajo porcentaje en azucares. En su formulario destaca el sabor de la maceración de hojas de eucaliptos.',
+        'descripcion': 'Creado en honor a nuestro fundador, Don Rafael Yáñez, es una bebida de bajo contenido alcohólico y bajo porcentaje en azucares. En su formulario destaca el sabor de la maceración de hojas de eucaliptos, dándole ese toque único en nuestra gama de productos.',
         'capacidad': '1.00',
         'grados': '30',
         'empaque': '12'
@@ -149,8 +149,10 @@ export const productos = [
         'nombre': 'R.Y. Blanco',
         'alias': 'ry_b',
         'image': 'ry_b.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.'
+        'descripcion': 'Creado en honor a nuestro fundador, Don Rafael Yáñez, es una bebida de bajo contenido alcohólico y bajo porcentaje en azucares. En su formulario destaca el sabor de la maceración de hojas de eucaliptos, dándole ese toque único en nuestra gama de productos.'
+    
     },
+
 
     {
         'id': '012',
@@ -158,7 +160,7 @@ export const productos = [
         'nombre': 'Pajarito',
         'alias': 'pajarito',
         'image': 'pajarito.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Bebida Espirituosa conocida por su sabor característico a Ron añejo. Es suave al paladar y al mismo tiempo, tiene mucho cuerpo, calidad y presencia. El Pajarito es reconocido por quienes disfrutan tomarlo seco o en las rocas. Como lo prefieras, es de único gusto.',
         'capacidad': '1.00',
         'grados': '30',
         'empaque': '12'
@@ -170,9 +172,9 @@ export const productos = [
         'nombre': 'La Florida Blanco',
         'alias': 'florida_b',
         'image': 'florida_b.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Licor emblemático de Licorería La Florida y leyenda del oriente venezolano en sus presentaciones blanco y rojo, Bebida espirituosa seca, con un sabor característico gracias a las virutas de roble presentes en su maceración.',
         'capacidad': '1.00',
-        'grados': '30',
+        'grados': '38',
         'empaque': '12'
     },
 
@@ -186,6 +188,7 @@ export const productos = [
         'capacidad': '1.00',
         'grados': '38',
         'empaque': '12'
+
     },
 
     {
@@ -194,9 +197,9 @@ export const productos = [
         'nombre': 'Rumba Florida',
         'alias': 'rumba',
         'image': 'rumba.JPG', 
-        'descripcion': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nunc mi, suscipit sit amet pellentesque sed, egestas sit amet ex. Duis consequat aliquam nisi, porttitor gravida nunc. Fusce vel turpis ipsum. Praesent vitae auctor eros. Phasellus nulla lorem, placerat eu gravida tincidunt, venenatis vehicula odio. Vestibulum sit amet commodo felis.',
+        'descripcion': 'Este licor ofrece un sabor exquisito, en las rocas o en cócteles, derivado de la maduración realizada en toneles de roble. Es otra creación de nuestros ingeniosos maestros licoreros, distinguida en el mercado por su único e indiscutible sabor a tu paladar.',
         'capacidad': '1.00',
-        'grados': '30',
+        'grados': '39',
         'empaque': '12'
     },
 ]
